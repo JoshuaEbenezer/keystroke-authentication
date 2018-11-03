@@ -1,6 +1,8 @@
 # Keystroke authentication #
 Authenticates a user based on his keystroke patterns on a keyboard.
 
+Collaborators: Pourush Sood (@pourushsood), Kaustav Brahma (@15EC10026), Rajdeep Biswas (@rajdeepiitkgp), Manan Khaneja (@manankhaneja)
+
 The data is provided as hold times for individual keys, and latencies between any and all pairs of consecutive key presses. Hold time is the time between pressing the key down and releasing it. Latency is the time between pressing two keys down successively.
 
 These two quantities are treated as features. So there could be a maximum of 26+26x26 features. There could be less if the user does not use some pairs of letters consecutively (for latencies) or does not use some letters at all (for hold times). 
@@ -9,17 +11,6 @@ We obtain 100% accuracy for some users with a one-class svm., and above 70% for 
 
 # Folders #
 
-## raw_data ##
-
-Contains raw data submitted by users.
-
-## extracted_data ##
-
-Contains hold time and latencies data (produced by hold.py).
-
-## pickled_vectors ##
-
-Contains the pickled vectors for SVM training.
 
 ## File concatenation ##
 
